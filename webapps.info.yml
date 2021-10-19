@@ -1,6 +1,6 @@
 name: WebApps
 type: module
-description: A WebApps browser embedded in the Drupal UI.
+description: "Have Web Apps support for Drupal 9 and extend the Project Browser module."
 core_version_requirement: ^9
 dependencies:
   - drupal:project_browser

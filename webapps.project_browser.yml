@@ -1,6 +1,6 @@
 name: "WebApps"
 machine_name: webapps
-description: "Modules and themes hosted on a private server"
+description: "Web Apps hosted on a private server"
 project:
   base_uri: /drupal-org-proxy/project
   fields:
