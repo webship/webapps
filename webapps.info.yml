@@ -3,4 +3,4 @@ type: module
 description: A WebApps browser embedded in the Drupal UI.
 core_version_requirement: ^9
 dependencies:
-  - core:project_browser
+  - drupal:project_browser
