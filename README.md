@@ -1,4 +1,4 @@
 # Webapps
 
-Have a better WebApps layout for the extend page.
+Have **Web Apps** support for **Drupal 9** and extend the **[Project Browser](https://www.drupal.org/project/project_browser)** module.
 
