@@ -23,7 +23,7 @@
     }
   },
   "require": {
-    "drupal/core": "~11.0.0",
+    "drupal/core": "~11.1.0",
     "drupal/project_browser": "~1.0"
   }
 }
