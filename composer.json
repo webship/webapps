@@ -1,28 +1,28 @@
 {
   "name": "drupal/webapps",
-  "description": "Have Web Apps support for Drupal 9 and extend the Project Browser module.",
+  "description": "Browse web apps, site templates and recipes from a Webships catalogue, through Project Browser.",
   "type": "drupal-module",
   "homepage": "https://www.drupal.org/project/webapps",
   "license": "GPL-2.0-or-later",
   "authors": [
-      {
-        "name": "Webship",
-        "homepage": "https://webship.co",
-        "role": "Maintainer"
-      }
-   ],
-   "support": {
-        "issues": "https://www.drupal.org/project/issues/webapps",
-        "source": "http://cgit.drupalcode.org/webapps"
-    },
-    "repositories": {
-      "drupal": {
+    {
+      "name": "Webship",
+      "homepage": "https://webship.co",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/webapps",
+    "source": "http://cgit.drupalcode.org/webapps"
+  },
+  "repositories": {
+    "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
   },
   "require": {
-    "drupal/core": "~11.1.0",
-    "drupal/project_browser": "~1.0"
+    "drupal/core": "^11.4 || ^12",
+    "drupal/project_browser": "^2"
   }
 }

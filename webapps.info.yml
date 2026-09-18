@@ -1,6 +1,7 @@
 name: WebApps
 type: module
-description: "Have Web Apps support for Drupal and extend the Project Browser module."
-core_version_requirement: ~11.1.0
+description: 'Browse web apps, site templates and recipes from a Webships catalogue, through Project Browser.'
+package: Webship
+core_version_requirement: ^11.4 || ^12
 dependencies:
   - project_browser:project_browser

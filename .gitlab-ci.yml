@@ -1,0 +1,35 @@
+################
+# GitLab CI for the WebApps module.
+#
+# The module is a Project Browser source plugin: PHP, no front-end build. Only
+# the drupalci module jobs run — composer, phpcs, phpstan and the test jobs.
+# Documentation: https://project.pages.drupalcode.org/gitlab_templates/
+################
+include:
+  - project: $_GITLAB_TEMPLATES_REPO
+    ref: $_GITLAB_TEMPLATES_REF
+    file:
+      - "/includes/include.drupalci.main.yml"
+      - "/includes/include.drupalci.variables.yml"
+      - "/includes/include.drupalci.workflows.yml"
+
+variables:
+  # For now, build and test with Drupal 11.4 and PHP 8.4.
+  DRUPAL_CORE: "11.4.x-dev"
+  _TARGET_PHP: "8.4"
+  COMPOSER_FLAGS: "--no-strict-lock"
+  COMPOSER_MEMORY_LIMIT: "-1"
+
+# Override the default composer job to use development versions.
+composer:
+  variables:
+    IGNORE_PROJECT_DRUPAL_CORE_VERSION: 0
+
+cspell:
+  stage: validate
+  image: node:20
+  before_script:
+    - npm install -g cspell
+  script:
+    - cspell "**/*.{php,module,inc,install,test,profile,theme,js,css,md,yml,txt}" --no-progress || true
+  allow_failure: true
