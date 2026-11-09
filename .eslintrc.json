@@ -1,10 +1,4 @@
 {
-  "extends": [
-    "airbnb-base",
-    "plugin:prettier/recommended",
-    "plugin:yml/recommended"
-  ],
-  "root": true,
   "env": {
     "browser": true,
     "es6": true,
